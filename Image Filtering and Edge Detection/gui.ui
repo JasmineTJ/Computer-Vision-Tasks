@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1094</width>
+    <height>844</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_23">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="widget">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_21">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_20">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_19">
+            <item row="3" column="0">
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Equalization</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="equalization">
+                   <property name="styleSheet">
+                    <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Normalization</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="normalization">
+                   <property name="styleSheet">
+                    <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="4" column="0">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>7</width>
+                <height>7</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_18">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox">
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Original Image</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="1">
+                  <widget class="QGraphicsView" name="original_image">
+                   <property name="styleSheet">
+                    <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QGroupBox" name="groupBox_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Filtered Image</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="filtered_image">
+                   <property name="styleSheet">
+                    <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="5" column="0">
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_5">
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Global Thresholding</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="global_thresholding">
+                   <property name="styleSheet">
+                    <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QGroupBox" name="groupBox_6">
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Local Thresholding</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="local_thresholding">
+                   <property name="styleSheet">
+                    <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="font">
+                   <font>
+                    <family>MS Reference Sans Serif</family>
+                    <pointsize>9</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Add noise</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="noise_combo">
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+    border: 1px solid #565656; /* Border color for the combobox */
+    border-radius: 10px;
+    padding: 2px 18px 2px 8px; /* Adjust padding as needed */
+    background-color: rgb(45, 73, 84); /* Background color of the combobox */
+    color: #FFFFFF; /* Text color */
+    selection-background-color: #2A2A2A; /* Background color when an item is selected */
+	font-family: &quot;Overpass&quot;, sans-serif; /* Set the desired font-family */
+	font-weight:bold;
+	font-size:16px;
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(127, 127, 127); /* Border color on hover */
+}
+
+QComboBox::indicator {
+    width: 0;
+    border: none;
+    margin-right: 6px; /* Adjust as needed */
+}
+
+QComboBox::item {
+    padding: 8px;
+    background-color: #363636; /* Background color of each item */
+}
+
+QComboBox::item:selected {
+    background-color: rgb(42, 42, 42); /* Background color of the selected item */
+}
+
+QComboBox::item:hover {
+    background-color: #2A2A2A; /* Background color on item hover */
+}</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Uniform</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Gaussian</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Salt &amp; Pepper</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1">
+               <layout class="QGridLayout" name="gridLayout_10">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_2">
+                  <property name="font">
+                   <font>
+                    <family>MS Reference Sans Serif</family>
+                    <pointsize>9</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Add smooth filter</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="filter_combo">
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+    border: 1px solid #565656; /* Border color for the combobox */
+    border-radius: 10px;
+    padding: 2px 18px 2px 8px; /* Adjust padding as needed */
+    background-color: rgb(45, 73, 84); /* Background color of the combobox */
+    color: #FFFFFF; /* Text color */
+    selection-background-color: #2A2A2A; /* Background color when an item is selected */
+	font-family: &quot;Overpass&quot;, sans-serif; /* Set the desired font-family */
+	font-weight:bold;
+	font-size:16px;
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(127, 127, 127); /* Border color on hover */
+}
+
+QComboBox::indicator {
+    width: 0;
+    border: none;
+    margin-right: 6px; /* Adjust as needed */
+}
+
+QComboBox::item {
+    padding: 8px;
+    background-color: #363636; /* Background color of each item */
+}
+
+QComboBox::item:selected {
+    background-color: rgb(42, 42, 42); /* Background color of the selected item */
+}
+
+QComboBox::item:hover {
+    background-color: #2A2A2A; /* Background color on item hover */
+}</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Average</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Gaussian</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Median</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
+               <layout class="QGridLayout" name="gridLayout_16">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_4">
+                  <property name="font">
+                   <font>
+                    <family>MS Reference Sans Serif</family>
+                    <pointsize>9</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Edge detection filter</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="edge_combo">
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+    border: 1px solid #565656; /* Border color for the combobox */
+    border-radius: 10px;
+    padding: 2px 18px 2px 8px; /* Adjust padding as needed */
+    background-color: rgb(45, 73, 84); /* Background color of the combobox */
+    color: #FFFFFF; /* Text color */
+    selection-background-color: #2A2A2A; /* Background color when an item is selected */
+	font-family: &quot;Overpass&quot;, sans-serif; /* Set the desired font-family */
+	font-weight:bold;
+	font-size:16px;
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(127, 127, 127); /* Border color on hover */
+}
+
+QComboBox::indicator {
+    width: 0;
+    border: none;
+    margin-right: 6px; /* Adjust as needed */
+}
+
+QComboBox::item {
+    padding: 8px;
+    background-color: #363636; /* Background color of each item */
+}
+
+QComboBox::item:selected {
+    background-color: rgb(42, 42, 42); /* Background color of the selected item */
+}
+
+QComboBox::item:hover {
+    background-color: #2A2A2A; /* Background color on item hover */
+}</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Sobel</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Roberts</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Prewitt</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Canny</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="3">
+               <layout class="QGridLayout" name="gridLayout_15">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="font">
+                   <font>
+                    <family>MS Reference Sans Serif</family>
+                    <pointsize>9</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Frequency domain filter</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="freq_filter_combo">
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+    border: 1px solid #565656; /* Border color for the combobox */
+    border-radius: 10px;
+    padding: 2px 18px 2px 8px; /* Adjust padding as needed */
+    background-color: rgb(45, 73, 84); /* Background color of the combobox */
+    color: #FFFFFF; /* Text color */
+    selection-background-color: #2A2A2A; /* Background color when an item is selected */
+	font-family: &quot;Overpass&quot;, sans-serif; /* Set the desired font-family */
+	font-weight:bold;
+	font-size:16px;
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(127, 127, 127); /* Border color on hover */
+}
+
+QComboBox::indicator {
+    width: 0;
+    border: none;
+    margin-right: 6px; /* Adjust as needed */
+}
+
+QComboBox::item {
+    padding: 8px;
+    background-color: #363636; /* Background color of each item */
+}
+
+QComboBox::item:selected {
+    background-color: rgb(42, 42, 42); /* Background color of the selected item */
+}
+
+QComboBox::item:hover {
+    background-color: #2A2A2A; /* Background color on item hover */
+}</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Low Pass</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>High Pass</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="2" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>7</width>
+                <height>7</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>10</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <layout class="QGridLayout" name="gridLayout_14"/>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Preferred</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>10</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_37">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_36">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_35">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_30">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_10">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Histogram</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_28">
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="histogram_graph"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QGroupBox" name="groupBox_11">
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Distribution Curve</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_29">
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="distribution_curve_graph"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="minimumSize">
+               <size>
+                <width>661</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Reference Sans Serif</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="title">
+               <string>RGB Histogram and Distribution Curve </string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_31">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="red_histo_graph"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QGraphicsView" name="green_histo_graph"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QGraphicsView" name="blue_histo_graph"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_34">
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_14">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_33">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="cumulative_curve"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_13">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_32">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="red_dist_graph"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QGraphicsView" name="green_dist_graph"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QGraphicsView" name="blue_dist_graph"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_38">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_27">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="gridLayout_22">
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_8">
+              <property name="maximumSize">
+               <size>
+                <width>700</width>
+                <height>400</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Reference Sans Serif</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+                <strikeout>false</strikeout>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="title">
+               <string>Image 2</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="image_2">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_7">
+              <property name="maximumSize">
+               <size>
+                <width>700</width>
+                <height>400</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Reference Sans Serif</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+                <strikeout>false</strikeout>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="title">
+               <string>Image 1</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <property name="leftMargin">
+                <number>12</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="image_1">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_hybrid_image">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Overpass</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+
+  
+    background-color: rgb(70, 100, 120); /* Matching color for the label */
+    color: #FFFFFF;
+    font-family: &quot;Overpass&quot;, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+alignment: center;
+}
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>    Hybrid Image</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <layout class="QGridLayout" name="gridLayout_26">
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_25">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_10">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>200</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>200</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QGroupBox" name="groupBox_9">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Reference Sans Serif</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>Hybrid Image</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="hybrid_image">
+                   <property name="styleSheet">
+                    <string notr="true">QWidget{
+background-color:white;
+border-radius:30px;
+}</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QGridLayout" name="gridLayout_24">
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>189</width>
+                <height>0</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>189</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1094</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

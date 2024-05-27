@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1002</width>
+    <height>689</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Harris operator</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_62">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_61">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+            </property>
+            <property name="text">
+             <string>Browse image</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <layout class="QGridLayout" name="gridLayout_60">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_17">
+              <property name="title">
+               <string>Input image</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_59">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="graphicsView"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_18">
+              <property name="title">
+               <string>Output image</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_58">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="graphicsView_2"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_55">
+            <item row="0" column="2">
+             <widget class="QPushButton" name="Apply_Harris">
+              <property name="styleSheet">
+               <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+              </property>
+              <property name="text">
+               <string>Apply</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLabel" name="label_20">
+              <property name="styleSheet">
+               <string notr="true">background-color:rgb(200, 200, 200);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+              </property>
+              <property name="text">
+               <string>Threshold</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="radioButton_harris">
+              <property name="text">
+               <string>Harris</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QRadioButton" name="radioButton_lambdaminus">
+              <property name="text">
+               <string>λ-</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QSlider" name="threshold_slider">
+              <property name="styleSheet">
+               <string notr="true">border: none;
+	color:rgb(170, 170, 255);
+    background-color: rgb(85, 170, 255);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+</string>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>SIFT</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_71">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_70">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_68">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_67">
+              <item row="0" column="0">
+               <layout class="QFormLayout" name="formLayout_2">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="upload1_sift_Button">
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Upload Image 1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_15">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QGroupBox" name="groupBox_19">
+                <property name="title">
+                 <string>Image 1</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_63">
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="sift1_graphicsView"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_66">
+              <item row="0" column="0">
+               <layout class="QFormLayout" name="formLayout">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="upload2_sift_Button">
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Upload Image 2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_14">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QGroupBox" name="groupBox_20">
+                <property name="title">
+                 <string>Image 2</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_64">
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="sift2_graphicsView"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_69">
+            <item row="2" column="0">
+             <layout class="QFormLayout" name="formLayout_3">
+              <item row="0" column="0">
+               <widget class="QPushButton" name="sift_apply_button">
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;
+</string>
+                </property>
+                <property name="text">
+                 <string>Apply</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer_16">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="3" column="0">
+             <widget class="QGroupBox" name="groupBox_21">
+              <property name="title">
+               <string>Result</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_65">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="sift_res_graphicsView"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="keypoints_radioButton">
+              <property name="text">
+               <string>Keypoints</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QRadioButton" name="matching_radioButton">
+              <property name="text">
+               <string>Matching</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>SSD</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_80">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_78">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_73">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_74">
+              <item row="0" column="0">
+               <layout class="QFormLayout" name="formLayout_4">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="img_ncc_button">
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Browse image</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_17">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QGroupBox" name="groupBox_22">
+                <property name="title">
+                 <string>Image1</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_75">
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="input_img_ncc"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_76">
+              <item row="0" column="0">
+               <layout class="QFormLayout" name="formLayout_5">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="target_ncc_button">
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Browse target</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_18">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QGroupBox" name="groupBox_23">
+                <property name="title">
+                 <string>image 2</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_77">
+                 <item row="0" column="0">
+                  <widget class="QGraphicsView" name="input_target_ncc"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_72">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_56">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgb(200, 200, 200);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+                </property>
+                <property name="text">
+                 <string>Choose mode</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QComboBox" name="feature_comboBox">
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgb(85, 170, 255);
+padding:6px;
+color:white;
+border-radius:10px;</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>SSD</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>NCC</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_24">
+              <property name="title">
+               <string>result</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_79">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="out_ncc"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1002</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
