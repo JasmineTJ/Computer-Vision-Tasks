@@ -1,9 +1,7 @@
-# Computer Vision Task README
-
-## Assignment 2: Edge and Boundary Detection (Hough Transform and SNAKE)
+# Edge and Boundary Detection (Hough Transform and SNAKE)
 
 
-This repository contains code and documentation for Assignment 2 of the Computer Vision course. The task involves edge detection using the Canny edge detector, detecting lines, circles, and ellipses in given images, and implementing the Active Contour Model (snake) using the greedy algorithm to evolve contours.
+This task involves edge detection using the Canny edge detector, detecting lines, circles, and ellipses in given images, and implementing the Active Contour Model (snake) using the greedy algorithm to evolve contours.
 
 ## Contents:
 
